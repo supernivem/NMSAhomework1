@@ -20,7 +20,7 @@
 % 
 %========================================================================================================
 
-function [Dati]=C_dati(test)
+function [Dati]=C_dati_4(test)
 L=1;
 if test=='Test1'
 Dati = struct( 'name',             test,...

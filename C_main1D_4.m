@@ -1,4 +1,4 @@
-function [errors,solutions,femregion,Dati] = C_main1D(TestName,nRef)
+function [errors,solutions,femregion,Dati] = C_main1D_4(TestName,nRef)
 %==========================================================================
 % Solution of the Wave Equation with linear finite elements
 % (non homogeneous Dirichlet boundary conditions)
@@ -17,7 +17,7 @@ function [errors,solutions,femregion,Dati] = C_main1D(TestName,nRef)
 %          Dati        : (struct)  see C_dati.m
 %          
 % Usage: 
-%    [errors,solutions,femregion,Dati] = C_main1D('Test1',3)
+%    [errors,solutions,femregion,Dati] = C_main1D_4('Test1',3)
  
 
 
@@ -33,7 +33,7 @@ addpath Postprocessing
 % LOAD DATA FOR TEST CASE
 %==========================================================================
 
-Dati = C_dati(TestName);
+Dati = C_dati_4(TestName);
 Dati.nRefinement = nRef;
 
 %==========================================================================
